@@ -56,9 +56,6 @@ require_once '../../include/page-head.php';
                             <div class="input-group"><span class="input-group-text">
                                 <i class="icon-lock"></i></span>
                                 <input type="password"class="form-control" id="password" required="" placeholder="*********">
-                                <div class="show-hide">
-                                    <span class="show"></span>
-                                </div>
                             </div>
                         </div>
                         <div class="form-group">

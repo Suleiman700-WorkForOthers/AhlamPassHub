@@ -118,9 +118,20 @@ class Search {
 
         // add back all passwords to table
         const allPasswords = Data_Passwords.dataGet()
-        allPasswords.forEach(filteredPassword => {
-            Tbl_Passwords.rowAdd(filteredPassword)
-        })
+
+        // check if there are passwords
+        if (allPasswords.length) {
+            // add passwords to the table
+            allPasswords.forEach(filteredPassword => {
+                Tbl_Passwords.rowAdd(filteredPassword)
+            })
+        }
+        // no passwords
+        else {
+            // show no results row
+            Tbl_Passwords.showNoResultsRow()
+        }
+
     }
 
 

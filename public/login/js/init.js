@@ -6,6 +6,8 @@ import inputPinCode from './inputs/input-pin-code.js';
 // buttons
 import buttonLogin from './buttons/button-login.js';
 
-$('.loader-wrapper').fadeOut('fast', function() {
-    $(this).remove();
-});
+// others
+import PageLoader from '/javascript/helpers/PageLoader.js';
+
+// remove page loader
+PageLoader.remove()

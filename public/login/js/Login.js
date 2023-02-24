@@ -78,12 +78,14 @@ class Login {
 
             alert.shown(false)
 
+            // store data
             const data = {
                 emailAddress,
                 password,
                 pinCode
             }
 
+            // send request
             const response = await RequestPost.send('./php/file.php', data, 'performLogin')
 
             // enable login button
