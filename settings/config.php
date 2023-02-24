@@ -1,4 +1,3 @@
 <?php
 
 $appName = 'PassHub';
-$baseUrl = '';

@@ -82,7 +82,6 @@ require_once '../../include/page-head.php';
 <?php
 require_once '../../include/page-footer.php';
 ?>
-<script src="../../assets/js/tooltip-init.js"></script>
 <script src="./js/init.js" type="module"></script>
 </body>
 </html>
