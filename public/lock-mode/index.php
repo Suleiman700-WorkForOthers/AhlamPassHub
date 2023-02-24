@@ -25,29 +25,15 @@ if (!$Session->inLockMode()) {
     <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/x-icon">
     <title><?php echo $pageTitle; ?></title>
     <!-- Google font-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
-    <!-- Font Awesome-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/fontawesome.css">
-    <!-- ico-font-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/icofont.css">
-    <!-- Themify icon-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/themify.css">
-    <!-- Flag icon-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/flag-icon.css">
-    <!-- Feather icon-->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/feather-icon.css">
-    <!-- Plugins css start-->
-    <!-- Plugins css Ends-->
+    <link rel="stylesheet" type="text/css" href="../../assets/fonts/google-fonts/googlefonts.css">
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/bootstrap.css">
     <!-- App css-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
-    <link id="color" rel="stylesheet" href="../../assets/css/color-1.css" media="screen">
     <!-- Responsive css-->
     <link rel="stylesheet" type="text/css" href="../../assets/css/responsive.css">
+    <!-- Font Awesome-->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/fontawesome.css">
 </head>
 <body class="dark-only">
 <!-- Loader starts-->
@@ -106,10 +92,10 @@ if (!$Session->inLockMode()) {
 
                 </style>
                 <div class="form-inline pt-3">
-                    <input type="text" class="form-control input-square" id="input1" maxlength="1" oninput="validateAndMove(this)">
-                    <input type="text" class="form-control input-square" id="input2" maxlength="1" oninput="validateAndMove(this)">
-                    <input type="text" class="form-control input-square" id="input3" maxlength="1" oninput="validateAndMove(this)">
-                    <input type="text" class="form-control input-square" id="input4" maxlength="1" oninput="validateAndMove(this)">
+                    <input type="text" class="form-control input-square" id="input1" maxlength="1">
+                    <input type="text" class="form-control input-square" id="input2" maxlength="1">
+                    <input type="text" class="form-control input-square" id="input3" maxlength="1">
+                    <input type="text" class="form-control input-square" id="input4" maxlength="1">
                 </div>
                 <h6 class="pt-3" id="info-label" style="display: block;">Enter PIN Code To Unlock</h6>
             </div>
@@ -119,7 +105,7 @@ if (!$Session->inLockMode()) {
 
 <!-- page-wrapper end-->
 <!-- latest jquery-->
-<script src="../../assets/js/jquery-3.5.1.min.js"></script>
+<script src="../../assets/libs/jquery/jquery-3.5.1.min.js"></script>
 <!-- Bootstrap js-->
 <script src="../../assets/js/bootstrap/popper.min.js"></script>
 <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>

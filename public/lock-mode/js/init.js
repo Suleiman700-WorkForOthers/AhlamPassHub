@@ -94,7 +94,6 @@ async function checkAllInputs() {
 // check message from url parameter
 const messageParam = location.search.split('message=')[1]
 if (messageParam.length) {
-    console.log(messageParam)
     const encryptionService = new EncryptionService()
     const decryptedMessage = await encryptionService.decryptMessage(messageParam)
     document.querySelector('#message').innerHTML = decryptedMessage
