@@ -34,7 +34,7 @@ require_once '../../include/page-head.php';
                 <div class="row">
                     <div class="col-sm-12 box-col-12 des-xl-100">
                         <div class="row">
-                            <div class="col-xl-12 col-md-6 box-col-6 des-xl-50">
+                            <div class="col-sm-12 box-col-12">
                                 <div class="card profile-greeting">
                                     <div class="card-header"><div class="header-top"></div></div>
                                     <div class="card-body text-center p-t-0">
@@ -58,7 +58,7 @@ require_once '../../include/page-head.php';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-md-3 col-sm-6 box-col-3 des-xl-25 rate-sec">
+                            <div class="col-sm-6 box-col-3 rate-sec">
                                 <div class="card income-card card-primary">
                                     <div class="card-body text-center">
                                         <div class="round-box">
@@ -70,7 +70,7 @@ require_once '../../include/page-head.php';
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-md-3 col-sm-6 box-col-3 des-xl-25 rate-sec">
+                            <div class="col-sm-6 box-col-3 rate-sec">
                                 <div class="card income-card card-secondary">
                                     <div class="card-body text-center">
                                         <div class="round-box">

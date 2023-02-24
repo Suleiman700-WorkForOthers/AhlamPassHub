@@ -5,7 +5,6 @@
 <script src="../../assets/js/icons/feather-icon/feather-icon.js"></script>
 <!-- Sidebar jquery -->
 <script src="../../assets/js/sidebar-menu.js"></script>
-<script src="../../assets/js/config.js"></script>
 <!-- Bootstrap -->
 <script src="../../assets/js/bootstrap/popper.min.js"></script>
 <script src="../../assets/js/bootstrap/bootstrap.min.js"></script>
