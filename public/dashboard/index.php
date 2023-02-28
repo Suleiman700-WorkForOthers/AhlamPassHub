@@ -58,6 +58,8 @@ require_once '../../include/page-head.php';
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
                             <div class="col-sm-6 box-col-3 rate-sec">
                                 <div class="card income-card card-primary">
                                     <div class="card-body text-center">

@@ -112,3 +112,35 @@ else if (isset($_GET['model']) && $_GET['model'] === 'fetchCategories') {
 
     echo json_encode($categories);
 }
+else if (isset($_GET['model']) && $_GET['model'] === 'generatePassword' && $session_isLogged) {
+
+    $res = array(
+        'state' => false,
+        'generatedPassword' => ''
+    );
+
+    // API endpoint
+    $url = 'https://www.passwordrandom.com/query?command=password&format=json&count=1';
+
+    $options = array(
+        'http' => array(
+            'method' => 'GET',
+            'header' => 'Content-type: application/json'
+        )
+    );
+
+    $context = stream_context_create($options);
+    $response = file_get_contents($url, false, $context);
+
+    if ($response === false) {
+        // handle error
+    } else {
+        //update flag
+        $res['state'] = true;
+
+        // store generated password
+        $data = json_decode($response, true); // decode JSON response as associative array
+        $res['generatedPassword'] = $data['char'][0];
+    }
+    echo json_encode($res);
+}

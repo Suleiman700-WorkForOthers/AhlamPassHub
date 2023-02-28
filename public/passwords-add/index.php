@@ -73,7 +73,12 @@ require_once '../../include/page-head.php';
                                     <div class="mb-3 row">
                                         <label class="col-sm-3 col-form-label" for="password-password">Password <code class="text-danger">*</code></label>
                                         <div class="col-sm-9">
-                                            <input type="text" class="form-control" id="password-password" value="" placeholder="Password">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button class="btn btn-primary btn-sm" id="generate-password"><i class="fa fa-refresh"></i> Generate</button>
+                                                </div>
+                                                <input type="text" class="form-control" id="password-password" value="" placeholder="Password">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="mb-3 row">
