@@ -24,36 +24,22 @@
                         <div class="mobile-back text-end"><span>Back</span><i class="fa fa-angle-right ps-2" aria-hidden="true"></i></div>
                     </li>
 
-                    <li class="sidebar-main-title">
-                        <div>
-                            <h6>Dashboard</h6>
-                        </div>
-                    </li>
                     <li class="dropdown"><a class="nav-link menu-title link-nav" href="../dashboard/index.php"><i data-feather="list"></i><span>Dashboard</span></a></li>
 
-                    <li class="sidebar-main-title">
-                        <div>
-                            <h6>Categories</h6>
-                        </div>
-                    </li>
+                    <hr />
                     <li class="dropdown"><a class="nav-link menu-title link-nav" href="../categories-list/index.php"><i data-feather="list"></i><span>Categories List</span></a></li>
                     <li class="dropdown"><a class="nav-link menu-title link-nav" href="../categories-add/index.php"><i data-feather="plus"></i><span>Add Category</span></a></li>
 
-                    <li class="sidebar-main-title">
-                        <div>
-                            <h6>Passwords</h6>
-                        </div>
-                    </li>
+                    <hr />
                     <li class="dropdown"><a class="nav-link menu-title link-nav" href="../passwords-list/index.php"><i data-feather="list"></i><span>Passwords List</span></a></li>
                     <li class="dropdown"><a class="nav-link menu-title link-nav" href="../passwords-add/index.php"><i data-feather="plus"></i><span>Add Password</span></a></li>
 
-                    <li class="sidebar-main-title">
-                        <div>
-                            <h6>Logins History</h6>
-                        </div>
-                    </li>
+                    <hr />
                     <li class="dropdown"><a class="nav-link menu-title link-nav" href="../successful-logins/index.php"><i data-feather="list"></i><span>Successful Logins</span></a></li>
                     <li class="dropdown"><a class="nav-link menu-title link-nav" href="../failed-logins/index.php"><i data-feather="list"></i><span>Failed Logins</span></a></li>
+
+                    <hr />
+                    <li class="dropdown"><a class="nav-link menu-title link-nav" href="../password-strength/index.php"><i data-feather="list"></i><span>Password Strength</span></a></li>
                 </ul>
             </div>
             <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
