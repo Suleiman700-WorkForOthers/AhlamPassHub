@@ -3,6 +3,7 @@ import ButtonManager from '/javascript/managers/button-manager/ButtonManager.js'
 import Modal_DeleteHistory from '../modals/Modal_DeleteHistory.js';
 
 function callback(_cb) {
+    Modal_DeleteHistory.targetHistoryId = undefined
     Modal_DeleteHistory.shown(true)
 }
 
