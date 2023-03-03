@@ -91,7 +91,7 @@ require_once '../../include/page-head.php';
         </div>
     </div>
 </div>
-<?php require_once '../../include/page-footer.php'; ?>
+<?php require_once '../../include/page-scripts.php'; ?>
 <script src="./js/init.js" type="module"></script>
 </body>
 </html>

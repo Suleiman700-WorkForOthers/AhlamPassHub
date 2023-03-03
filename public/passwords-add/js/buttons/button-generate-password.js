@@ -18,16 +18,27 @@ async function callback(_cb) {
     });
 
     // send API request to generate strong password
-    const response = await RequestGet.send('./php/file.php', {}, 'generatePassword')
+    try {
+        const response = await RequestGet.send('./php/file.php', {}, 'generatePassword')
 
-    // hide loading
-    Swal.close()
+        // hide loading
+        Swal.close()
 
-    // check response
-    if (response['state']) {
-        inputPasswordPassword.valueSet(response['generatedPassword'])
+        // check response
+        if (response['state']) {
+            inputPasswordPassword.valueSet(response['generatedPassword'])
+        }
+        else {
+            // show error
+            Swal.fire({
+                icon: 'error',
+                title: 'Ops!',
+                html: 'Unable to generate password, An error occurred contacting API.',
+                showConfirmButton: true,
+            });
+        }
     }
-    else {
+    catch (e) {
         // show error
         Swal.fire({
             icon: 'error',

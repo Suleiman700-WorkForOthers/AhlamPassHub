@@ -22,7 +22,8 @@ class RequestGet {
                     try {
                         const data = JSON.parse(res);
                         resolve(data)
-                    } catch {
+                    }
+                    catch {
                         console.log(res);
                         reject(res);
                     }

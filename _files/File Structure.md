@@ -163,7 +163,7 @@ The `include` directory contains files that are included in page view such as pa
 
 ```
 +---include
-|   |   page-footer.php
+|   |   page-scripts.php
 |   |   page-head.php
 |   |   
 |   +---components
@@ -171,7 +171,7 @@ The `include` directory contains files that are included in page view such as pa
 |           sidebar.php
 ```
 
-* `page-footer.php` contains the page view footer.
+* `page-scripts.php` contains the page view scripts.
 * `page-head.php` contains the page view head `<head>`.
 
 #### components directory breakdown.

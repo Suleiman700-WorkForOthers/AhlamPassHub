@@ -79,7 +79,7 @@ require_once '../../include/page-head.php';
     </div>
 </section>
 <?php
-require_once '../../include/page-footer.php';
+require_once '../../include/page-scripts.php';
 ?>
 <script src="./js/init.js" type="module"></script>
 </body>
