@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PassHub.iml" filepath="$PROJECT_DIR$/.idea/PassHub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/passhub.iml" filepath="$PROJECT_DIR$/.idea/passhub.iml" />
     </modules>
   </component>
 </project>

@@ -4,9 +4,9 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
-require_once '../../classes/authentication/Session.php';
-require_once '../../classes/categories/Categories.php';
-require_once '../../classes/passwords/Passwords.php';
+require_once $basePath.'/classes/authentication/Session.php';
+require_once $basePath.'/classes/categories/Categories.php';
+require_once $basePath.'/classes/passwords/Passwords.php';
 
 $Session = new Session();
 
@@ -65,11 +65,11 @@ $count_passwords = $Passwords->count_user_passwords($session_userId);
 </script>
 
 <script type="module">
-    import EncryptionService from '/javascript/security/EncryptionService.js';
+    import EncryptionService from '../../javascript/security/EncryptionService.js';
     const encryptionService = new EncryptionService()
     const encryptedMessage = await encryptionService.encryptMessage(`For your security, we've activated a lock mode due to inactivity. Please re-enter your credentials to resume using the site. This helps to prevent unauthorized access and ensure that your personal information remains protected.`);
 
     // inactivity lock
-    import InactivityLock from '/javascript/security/InactivityLock.js';
+    import InactivityLock from '../../javascript/security/InactivityLock.js';
     InactivityLock.setMessage(encryptedMessage)
 </script>

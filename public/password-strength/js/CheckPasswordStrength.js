@@ -6,7 +6,7 @@ import inputPassword from './inputs/input-password.js';
 import buttonCheckPasswordStrength from "./buttons/button-check-password-strength.js";
 
 // requests
-import RequestGet from '/javascript/requests/RequestGet.js';
+import RequestGet from '../../../javascript/requests/RequestGet.js';
 
 class CheckPasswordStrength {
     constructor() {}

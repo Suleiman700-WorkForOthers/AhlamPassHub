@@ -1,6 +1,6 @@
 <?php
 require_once '../../settings/config.php';
-require_once '../../classes/authentication/Session.php';
+require_once $basePath.'/classes/authentication/Session.php';
 $pageTitle = "Login | $appName";
 
 // redirect logged-in users to dashboard, this will prevent logged-in users from using the login page
@@ -21,7 +21,7 @@ else {
 <html lang="en">
 
 <?php
-require_once '../../include/page-head.php';
+require_once $basePath.'/include/page-head.php';
 ?>
 
 <body>
@@ -79,7 +79,7 @@ require_once '../../include/page-head.php';
     </div>
 </section>
 <?php
-require_once '../../include/page-scripts.php';
+require_once $basePath.'/include/page-scripts.php';
 ?>
 <script src="./js/init.js" type="module"></script>
 </body>

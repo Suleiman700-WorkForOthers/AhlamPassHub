@@ -1,7 +1,7 @@
 <?php
 require_once '../../settings/config.php';
-require_once '../../classes/categories/Categories.php';
-require_once '../../classes/authentication/Session.php';
+require_once $basePath.'/classes/categories/Categories.php';
+require_once $basePath.'/classes/authentication/Session.php';
 $pageTitle = "Add Password | $appName";
 ?>
 
@@ -9,7 +9,7 @@ $pageTitle = "Add Password | $appName";
 <html lang="en">
 
 <?php
-require_once '../../include/page-head.php';
+require_once $basePath.'/include/page-head.php';
 ?>
 
 <body>
@@ -23,12 +23,12 @@ require_once '../../include/page-head.php';
 <!-- page-wrapper Start       -->
 <div class="page-wrapper compact-wrapper" id="pageWrapper">
     <!-- Page Header Start-->
-    <?php require_once '../../include/components/header.php'; ?>
+    <?php require_once $basePath.'/include/components/header.php'; ?>
     <!-- Page Header Ends -->
     <!-- Page Body Start-->
     <div class="page-body-wrapper sidebar-icon">
         <!-- Page Sidebar Start-->
-        <?php require_once '../../include/components/sidebar.php'; ?>
+        <?php require_once $basePath.'/include/components/sidebar.php'; ?>
         <!-- Page Sidebar Ends-->
         <div class="page-body">
             <div class="container-fluid">
@@ -113,7 +113,7 @@ require_once '../../include/page-head.php';
         </div>
     </div>
 </div>
-<?php require_once '../../include/page-scripts.php'; ?>
+<?php require_once $basePath.'/include/page-scripts.php'; ?>
 <script src="./js/init.js" type="module"></script>
 </body>
 </html>

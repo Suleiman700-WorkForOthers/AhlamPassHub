@@ -1,21 +1,21 @@
 <?php
 
-require_once '../../../classes/authentication/Session.php';
-require_once '../../../classes/categories/Categories.php';
-require_once '../../../classes/passwords/Passwords.php';
-require_once '../../../settings/ERROR_CODES.php';
+require_once '../../../settings/config.php';
+
+require_once $basePath.'/classes/authentication/Session.php';
+require_once $basePath.'/classes/categories/Categories.php';
+require_once $basePath.'/classes/passwords/Passwords.php';
+require_once $basePath.'/classes/users/Users.php';
+require_once $basePath.'/settings/ERROR_CODES.php';
 $Session = new Session();
 $Categories = new Categories();
 $Passwords = new Passwords();
+$Users = new Users();
 
 // check if logged
 $session_isLogged = $Session->isLogged();
 
 if (isset($_POST['model']) && $_POST['model'] === 'checkPinCode') {
-    require_once '../../../classes/authentication/Session.php';
-    require_once '../../../classes/users/Users.php';
-    $Session = new Session();
-    $Users = new Users();
 
     $res = array(
         'isValid' => false,

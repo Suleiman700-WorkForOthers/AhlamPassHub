@@ -1,7 +1,9 @@
 <?php
 
-require_once '../../../classes/authentication/Session.php';
-require_once '../../../classes/categories/Categories.php';
+require_once '../../../settings/config.php';
+
+require_once $basePath.'/classes/authentication/Session.php';
+require_once $basePath.'/classes/categories/Categories.php';
 $Session = new Session();
 $Categories = new Categories();
 
@@ -17,7 +19,7 @@ $session_isLogged = $Session->isLogged();
 
 if (isset($_GET['model']) && $_GET['model'] === 'performCheckPasswordStrength' && $session_isLogged) {
     // this will reject request and return error message to user then do exit;
-    require_once '../../../functions/requests/reject-request-in-lock-mode.php';
+    require_once $basePath.'/functions/requests/reject-request-in-lock-mode.php';
 
     $validPassword = false;
 

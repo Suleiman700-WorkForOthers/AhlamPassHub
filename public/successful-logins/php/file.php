@@ -1,16 +1,17 @@
 <?php
 
-
+require_once '../../../settings/config.php';
 
 // this will reject request and return error message to user then do exit;
-require_once '../../../functions/requests/reject-request-in-lock-mode.php';
+require_once $basePath.'/functions/requests/reject-request-in-lock-mode.php';
+
+require_once $basePath.'/classes/authentication/Session.php';
+require_once $basePath.'/classes/authentication/SuccessfulLogin.php';
+
+$Session = new Session();
+$SuccessfulLogin = new SuccessfulLogin();
 
 if (isset($_GET['model']) && $_GET['model'] === 'fetchSuccessfulLogins') {
-    require_once '../../../classes/authentication/Session.php';
-    require_once '../../../classes/authentication/SuccessfulLogin.php';
-    $Session = new Session();
-    $SuccessfulLogin = new SuccessfulLogin();
-
     // get user id from session
     $session_userId = $Session->getSessionUserId();
 
@@ -21,11 +22,6 @@ if (isset($_GET['model']) && $_GET['model'] === 'fetchSuccessfulLogins') {
     echo json_encode($response);
 }
 else if (isset($_POST['model']) && $_POST['model'] === 'performHistoryDelete') {
-    require_once '../../../classes/authentication/Session.php';
-    require_once '../../../classes/authentication/SuccessfulLogin.php';
-    $Session = new Session();
-    $SuccessfulLogin = new SuccessfulLogin();
-
     $session_userId = $Session->getSessionUserId();
 
     $validHistoryId = false;
@@ -86,11 +82,6 @@ else if (isset($_POST['model']) && $_POST['model'] === 'performHistoryDelete') {
     echo json_encode($res);
 }
 else if (isset($_POST['model']) && $_POST['model'] === 'performAllHistoryDelete') {
-    require_once '../../../classes/authentication/Session.php';
-    require_once '../../../classes/authentication/SuccessfulLogin.php';
-    $Session = new Session();
-    $SuccessfulLogin = new SuccessfulLogin();
-
     $session_userId = $Session->getSessionUserId();
 
     $validHistoryId = false;

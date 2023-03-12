@@ -1,6 +1,7 @@
 <?php
 
-require_once $_SERVER['DOCUMENT_ROOT'].'/settings/db.php';
+require_once $basePath.'/settings/config.php';
+require_once $basePath.'/settings/db.php';
 
 class Categories
 {

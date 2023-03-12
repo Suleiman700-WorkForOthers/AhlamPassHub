@@ -1,9 +1,11 @@
 <?php
 
-require_once '../../../classes/authentication/Session.php';
-require_once '../../../classes/categories/Categories.php';
-require_once '../../../classes/passwords/Passwords.php';
-require_once '../../../settings/ERROR_CODES.php';
+require_once '../../../settings/config.php';
+
+require_once $basePath.'/classes/authentication/Session.php';
+require_once $basePath.'/classes/categories/Categories.php';
+require_once $basePath.'/classes/passwords/Passwords.php';
+require_once $basePath.'/settings/ERROR_CODES.php';
 $Session = new Session();
 $Categories = new Categories();
 $Passwords = new Passwords();
@@ -13,7 +15,7 @@ $session_isLogged = $Session->isLogged();
 
 if (isset($_POST['model']) && $_POST['model'] === 'addNewPassword' && $session_isLogged) {
     // this will reject request and return error message to user then do exit;
-    require_once '../../../functions/requests/reject-request-in-lock-mode.php';
+    require_once $basePath.'/functions/requests/reject-request-in-lock-mode.php';
 
     // get user id from session
     $session_userId = $Session->getSessionUserId();
@@ -99,8 +101,8 @@ if (isset($_POST['model']) && $_POST['model'] === 'addNewPassword' && $session_i
     echo json_encode($res);
 }
 else if (isset($_GET['model']) && $_GET['model'] === 'fetchCategories') {
-    require_once '../../../classes/authentication/Session.php';
-    require_once '../../../classes/categories/Categories.php';
+    require_once $basePath.'/classes/authentication/Session.php';
+    require_once $basePath.'/classes/categories/Categories.php';
     $Session = new Session();
     $Categories = new Categories();
 

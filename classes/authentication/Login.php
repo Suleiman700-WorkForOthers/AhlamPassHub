@@ -1,7 +1,6 @@
 <?php
-
-require_once '../../../settings/db.php';
-require_once '../../../classes/users/Users.php';
+require_once $basePath.'/settings/db.php';
+require_once $basePath.'/classes/users/Users.php';
 
 class Login
 {

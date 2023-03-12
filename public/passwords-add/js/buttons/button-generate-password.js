@@ -1,10 +1,10 @@
-import ButtonManager from '/javascript/managers/button-manager/ButtonManager.js';
+import ButtonManager from '../../../../javascript/managers/button-manager/ButtonManager.js';
 
 // inputs
 import inputPasswordPassword from '../inputs/input-password-password.js';
 
 // API
-import RequestGet from '/javascript/requests/RequestGet.js';
+import RequestGet from '../../../../javascript/requests/RequestGet.js';
 
 async function callback(_cb) {
 

@@ -1,7 +1,7 @@
 <?php
 
-require_once '../../../settings/db.php';
-require_once '../../../classes/helpers/Generators.php';
+require_once $basePath.'/settings/db.php';
+require_once $basePath.'/classes/helpers/Generators.php';
 
 class SuccessfulLogin
 {

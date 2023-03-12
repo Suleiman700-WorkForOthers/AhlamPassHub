@@ -1,7 +1,7 @@
-import RequestPost from '/javascript/requests/RequestPost.js';
+import RequestPost from '../../../javascript/requests/RequestPost.js';
 
 // encryption
-import EncryptionService from '/javascript/security/EncryptionService.js';
+import EncryptionService from '../../../javascript/security/EncryptionService.js';
 
 const infoLabel = document.querySelector('#info-label')
 

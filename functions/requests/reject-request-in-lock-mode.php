@@ -1,7 +1,7 @@
 <?php
 
-require_once '../../../settings/ERROR_CODES.php';
-require_once '../../../classes/authentication/Session.php';
+require_once $basePath.'/settings/ERROR_CODES.php';
+require_once $basePath.'/classes/authentication/Session.php';
 $Session = new Session();
 
 // reject request if user is in lock mode

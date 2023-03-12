@@ -1,11 +1,13 @@
 <?php
 
+require_once '../../../settings/config.php';
+
 if (isset($_POST['model']) && $_POST['model'] === 'performRegister') {
-    require_once '../../../classes/authentication/Session.php';
-    require_once '../../../classes/authentication/Login.php';
-    require_once '../../../classes/users/Users.php';
-    require_once '../../../functions/validators/validation-email.php';
-    require_once '../../../functions/validators/validate-pin-code.php';
+    require_once $basePath.'/classes/authentication/Session.php';
+    require_once $basePath.'/classes/authentication/Login.php';
+    require_once $basePath.'/classes/users/Users.php';
+    require_once $basePath.'/functions/validators/validation-email.php';
+    require_once $basePath.'/functions/validators/validate-pin-code.php';
 
     $Login = new Login();
     $Users = new Users();

@@ -1,6 +1,6 @@
 <?php
 require_once '../../settings/config.php';
-require_once '../../classes/authentication/Session.php';
+require_once $basePath.'/classes/authentication/Session.php';
 $pageTitle = "Lock Mode | $appName";
 
 
