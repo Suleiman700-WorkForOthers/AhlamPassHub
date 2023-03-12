@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 24, 2023 at 08:47 PM
+-- Generation Time: Mar 12, 2023 at 08:27 PM
 -- Server version: 10.4.27-MariaDB
 -- PHP Version: 8.2.0
 
@@ -18,10 +18,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ahlam_passhub`
+-- Database: `passhub`
 --
-CREATE DATABASE IF NOT EXISTS `ahlam_passhub` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `ahlam_passhub`;
+CREATE DATABASE IF NOT EXISTS `passhub` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `passhub`;
 
 -- --------------------------------------------------------
 
@@ -43,7 +43,7 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `user_id`, `name`, `description`, `color`) VALUES
-(0, 0, 'Ahlam', 'Ahlam passwords', '#00b3ff');
+(0, 0, 'Family', 'Family passwords', '#ff0000');
 
 -- --------------------------------------------------------
 
@@ -62,13 +62,6 @@ CREATE TABLE `failed_logins` (
   `user_agent` text DEFAULT NULL,
   `login_time` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Dumping data for table `failed_logins`
---
-
-INSERT INTO `failed_logins` (`id`, `user_id`, `used_password`, `used_pin_code`, `fail_reason`, `ip_address`, `user_agent`, `login_time`) VALUES
-(1, 0, '1234', '1233', 'Invalid pin code', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36', '2023-02-24 16:27:23');
 
 -- --------------------------------------------------------
 
@@ -110,7 +103,7 @@ CREATE TABLE `successful_logins` (
 --
 
 INSERT INTO `successful_logins` (`id`, `user_id`, `login_time`, `ip_address`, `user_agent`) VALUES
-(47, 0, '2023-02-24 16:27:25', '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36');
+(56, 0, '2023-03-12 17:57:55', '::1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36');
 
 -- --------------------------------------------------------
 
@@ -209,13 +202,13 @@ ALTER TABLE `users_keys`
 -- AUTO_INCREMENT for table `failed_logins`
 --
 ALTER TABLE `failed_logins`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `successful_logins`
 --
 ALTER TABLE `successful_logins`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- Constraints for dumped tables
